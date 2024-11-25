@@ -1,24 +1,16 @@
 const mongoose = require('mongoose')
 
 const filmSchema = mongoose.Schema({
-    building: {
+    _id: {
         type: String,
-        required: true
-    },
-    coord: {
-        type: Number,
-        required: true
-    },
-    street: {
-        type: String,
-        required: true
+        repuired: true
     },
     borough: {
         type: String,
         required: true
     },
-    grade: {
-        type: String,
+    cuisine: {
+        type: Number,
         required: true
     },
     name: {
