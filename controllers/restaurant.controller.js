@@ -12,5 +12,6 @@ exports.createRestaurant = async (req, res, next) => {
     }
 }
 
-//const httpMocks = require('node-mocks-http')
-//const newRestaurant = require('./mock-data/new-restaurant.json')
+const httpMocks = require('node-mocks-http')
+const newRestaurant = require('./mock-data/new-restaurant.json')
+const allRestaurant = require('./mock-data/all-restaurant.json')
