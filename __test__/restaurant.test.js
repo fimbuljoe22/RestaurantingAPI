@@ -1,0 +1,19 @@
+const RestaurantController = require('../controllers/restaurant.controller')
+const RestaurantModel = require('../models/restaurant.model')
+const httpMocks = require('node-mocks-http')
+const newRestaurant = require('./mock-data/new-restaurant.json')
+
+RestaurantModel.create = jest.fn()
+RestaurantModel.find = jest.fn();
+let req, res, next
+beforeEach(() => {
+    req = httpMocks.createRequest()
+    res = httpMocks.createResponse()
+    next = null
+})
+
+describe('RestaurantController.createRestaurant', ()=>{
+    beforeEach(() => {
+        req.body = newRestaurant
+    })
+})
